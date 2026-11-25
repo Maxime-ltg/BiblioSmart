@@ -1,0 +1,61 @@
+# ===========================
+# Secrets et configuration locale
+# ===========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ===========================
+# Backend Java / Spring Boot (Maven)
+# ===========================
+backend/target/
+target/
+*.class
+*.jar
+*.war
+*.log
+hs_err_pid*
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle (si utilisé à la place de Maven)
+.gradle/
+build/
+
+# ===========================
+# Frontend React / Node.js
+# ===========================
+node_modules/
+frontend/dist/
+dist/
+.vite/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===========================
+# Éditeurs et IDE
+# ===========================
+.idea/
+*.iml
+.vscode/
+!.vscode/extensions.json
+*.swp
+.project
+.classpath
+.settings/
+
+# ===========================
+# Fichiers système
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Docker (données locales de la base)
+# ===========================
+postgres-data/
